@@ -1,0 +1,87 @@
+//Library.cs
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class Library
+    {
+        string name, adress;
+        public void SetLibrary(string name, string adress)
+        {
+            this.name = name;
+            this.adress = adress;
+
+            {
+        public void WhatIsLibraryName()
+        {
+            Console.WriteLine("Library name is" + this.name + "adress" + this.adress);
+        }
+        public bool DoesTheLibraryHaveName()
+        {
+            bool found = false;
+            if (string.IsNullOrEmpty(this.name)) {
+                found = false;
+            else
+                    found = true;
+                return found;
+            }
+        }
+    }
+}
+--------------------------------------------------------------------------------------------------
+
+//Program.cs
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Library library1 = new Library();
+            library1.SetLibrary("KAYU", "TALAS");
+
+
+            library1.WhatIsLibraryName();
+            Console.ReadKey();
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
